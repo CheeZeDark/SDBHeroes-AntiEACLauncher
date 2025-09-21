@@ -9,8 +9,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     ZeroMemory(&si, sizeof(si));
     si.cb = sizeof(si);
     ZeroMemory(&pi, sizeof(pi));
-    // Specify the application to launch (e.g., Notepad)
-    // You can also provide the full path if the application is not in a standard location or your PATH.
     LPCSTR lpApplicationName = "SDBHeroes_WorldMission.exe"; //Steam Version!!!
     if (!CreateProcessA(
         lpApplicationName,    // Application name
@@ -32,4 +30,5 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         return EXIT_SUCCESS;
     }
 	return 0;
+
 }
