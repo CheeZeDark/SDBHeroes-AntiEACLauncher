@@ -9,7 +9,7 @@ def Main():
     PlayMusic_AlanWalkerForce()
     dragonballheroes_realfile_fake = "Launch_Game.exe"
     if(p.exists(dragonballheroes_realfile_fake)):
-        PE_DragonBallHeroes = pefile.PE(dragonballheroes_realfile)
+        PE_DragonBallHeroes = pefile.PE(dragonballheroes_realfile_fake)
         print("Real Size of Fake Launcher of EAC(EasyAntiCheat): {}".format(PE_DragonBallHeroes.OPTIONAL_HEADER.SizeOfImage))
         input_yes = input("Do you Want to Copy This Fake EAC Launcher(Super Dragon Ball Heroes)?")
         if(input_yes == "y"):
@@ -27,4 +27,5 @@ def Main():
 
 if __name__ == "__main__":
     Main()
+
 
