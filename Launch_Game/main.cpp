@@ -23,7 +23,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         &pi                   // PROCESS_INFORMATION structure
     )) 
     {
-        MessageBoxA(0, "Failed to Run SDBHeroes_WorldMission.exe", "SDBHeroes-AntiEACLauncher", MB_OK | MB_ICONWARNING);
+        MessageBoxA(0, "Failed to Run SDBHeroes_WorldMission.exe or you copy in the wrong folder", "SDBHeroes-AntiEACLauncher", MB_OK | MB_ICONWARNING);
         return EXIT_FAILURE;
     }
     else {
@@ -32,3 +32,4 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	return 0;
 
 }
+
