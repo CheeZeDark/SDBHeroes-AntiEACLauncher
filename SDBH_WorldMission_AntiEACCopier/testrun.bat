@@ -2,4 +2,5 @@
 
 python Main.py
 
-echo if worked you can use my script, if doesn't worked or you didn't install Python use binary file(.exe)!!!
+echo if worked, you can now run my script for compiling python file to binary file!!!
+exit
