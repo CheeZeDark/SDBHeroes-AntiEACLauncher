@@ -17,7 +17,7 @@ def Main():
             print("PLS DO NOT TOUCH Launch_Game_TMP.exe(IN TEMP FOLDER) \nIF YOU WANTED, YOU CAN RENAME THIS TO LAUNCH_GAME.EXE AND COPY TO LICENSE FOLDER OF SUPER DRAGON BALL HEROES TO RETURN ONLINE MULTIPLAYER!!!")
             shutil.copy2(dragonballheroes_realfile_fake, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\SUPER DRAGON BALL HEROES WORLD MISSION\\Launch_Game.exe")
             print("Successfully Copied!!!")
-            shutil.copy2("Launch_Game_TMP.exe", "{}".format(n.getenv("TEMP") + "\\Launch_Game.exe")) # os.getenv["VARIABLE_NAME"] outdated in Python 3.10 or lower.
+            shutil.copy2("Launch_Game_TMP.exe", "{}".format(n.getenv("TEMP") + "\\Launch_Game.exe")) # os.getenv["VARIABLE_NAME"] outdated in Python 3.10 or higher.
             n.remove("Launch_Game_TMP.exe")
             n.remove("Launch_Game.exe")
             print("Successfully Bypassed EAC Protected Game Super Dragon Ball Heroes!!! \nCreated By Rikko Matsumato!!!")
@@ -27,5 +27,6 @@ def Main():
 
 if __name__ == "__main__":
     Main()
+
 
 
